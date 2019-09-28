@@ -6,8 +6,6 @@ export default {
 
         return restaurantService.create(name, type)
             .then((createdRestaurant) => {
-                console.log(createdRestaurant)
-
                 return res.json({
                     data: createdRestaurant
                 });
