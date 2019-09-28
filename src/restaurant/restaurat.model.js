@@ -29,6 +29,19 @@ const restaurantSchema = new dbSchema({
     logo: {
         type: Buffer,
         default: null
+    },
+    /**
+     * @name categories
+     * @type {Object}
+     */
+    categories: [],
+    /**
+     * @name menu
+     * @type Array
+     */
+    menu: {
+        type: Array,
+        default: []
     }
 }, restaurantSchemaOptions);
 
