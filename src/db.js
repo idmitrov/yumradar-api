@@ -1,8 +1,9 @@
-import mongoose, { model, Schema } from 'mongoose';
+import mongoose, { model, Schema, Types } from 'mongoose';
 
 export const dbDriver = mongoose;
 export const dbModel = model;
 export const dbSchema = Schema;
+export const dbTypes = Types;
 
 dbDriver.Promise = global.Promise;
 
