@@ -7,7 +7,8 @@ export default {
         return restaurat.save();
     },
     filter() {
-        return Restaurant.find({});
+        return Restaurant
+            .find({}, 'name logo type');
     },
     getDetails(restauratName) {
         return Restaurant.findOne({ name: restauratName });
