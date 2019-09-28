@@ -28,6 +28,36 @@ export const seedRestaurants = () => {
                         price: 4.00,
                         ingredients: []
                     },
+                    {
+                        category: 'pizza',
+                        name: 'Margarita',
+                        price: 8.00,
+                        ingredients: []
+                    },
+                    {
+                        category: 'fish',
+                        name: 'Salmon',
+                        price: 12.00,
+                        ingredients: []
+                    },
+                    {
+                        category: 'deserts',
+                        name: 'Cake',
+                        price: 5.00,
+                        ingredients: []
+                    },
+                    {
+                        category: 'soups',
+                        name: 'Chicken',
+                        price: 3.00,
+                        ingredients: []
+                    },
+                    {
+                        category: 'grill',
+                        name: 'Steak',
+                        price: 10.00,
+                        ingredients: []
+                    }
                 ];
             
                 const restaurants = [
