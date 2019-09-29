@@ -6,7 +6,7 @@
   "author": "Dimitar <mailto.dimitrov@gmail.com>",
   "scripts": {
     "prestart": "yarn",
-    "dev": "NODE_ENV=dev nodemon",
+    "dev": "nodemon",
     "start": "NODE_ENV=prod node index.js"
   },
   "dependencies": {
