@@ -6,6 +6,14 @@ const restaurantSchemaOptions = {
 
 const restaurantSchema = new dbSchema({
     /**
+     * @name deliveryPrice
+     * @type {Number}
+     */
+    deliveryPrice: {
+        type: Number,
+        default: 0
+    },
+    /**
      * @name name
      * @type {String}
      */
@@ -29,6 +37,27 @@ const restaurantSchema = new dbSchema({
     logo: {
         type: Buffer,
         default: null
+    },
+    /**
+     * @name categories
+     * @type {Object}
+     */
+    categories: [],
+    /**
+     * @name menu
+     * @type Array
+     */
+    menu: {
+        type: Array,
+        default: []
+    },
+    /**
+     * @name minOrder
+     * @type {Number}
+     */
+    minOrder: {
+        type: Number,
+        default: 0
     }
 }, restaurantSchemaOptions);
 

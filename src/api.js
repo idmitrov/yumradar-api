@@ -15,8 +15,8 @@ import { configureAWS } from './aws';
 import Account from './account/account.model';
 
 import accountRoutes from './account/account.routes';
+import orderRoutes from './order/order.routes';
 import restaurantRoutes from './restaurant/restaurant.routes';
-
 const configureAuth = (options = {}) => {
     const localDefaults = {
         session: false,
@@ -60,6 +60,7 @@ const configureMiddlewares = (api) => {
 
 const configureRoutes = (api) => {
     api
+        .use('/order', orderRoutes)
         .use('/restaurant', restaurantRoutes)
         .use('/account', accountRoutes)
         .use('*', (req, res, next) => next('Unknown endpoint'));
