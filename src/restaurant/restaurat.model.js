@@ -31,6 +31,14 @@ const restaurantSchema = new dbSchema({
         default: []
     },
     /**
+     * @name eatingTypes
+     * @type {Array}
+     */
+    eatingTypes: {
+        type: Array,
+        default: []
+    },
+    /**
      * @name logo
      * @type {Buffer}
      */

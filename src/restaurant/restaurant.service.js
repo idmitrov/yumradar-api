@@ -8,7 +8,7 @@ export default {
     },
     filter() {
         return Restaurant
-            .find({}, 'name logoUrl');
+            .find({}, 'name logoUrl eatingTypes');
     },
     getDetails(restauratName) {
         return Restaurant.findOne({ name: restauratName });
