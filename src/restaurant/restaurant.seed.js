@@ -70,8 +70,8 @@ export const seedRestaurants = () => {
             
                 const restaurants = [
                     { name: 'Happy', minOrder: 10, deliveryPrice: 0, categories, menu, logoUrl: 'https://webandevents.com/wp-content/uploads/2018/02/20180108-bf2cd9077f486d3dd7ea052b-or.png' },
-                    { name: 'Mr. Pizza', minOrder: 10, deliveryPrice: 10, categories, menu },
-                    { name: 'Test', minOrder: 10, deliveryPrice: 0, categories, menu },
+                    { name: 'Mr. Pizza', minOrder: 10, deliveryPrice: 10, categories, menu, logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Mr.Pizza_logo.JPG' },
+                    { name: 'Пицария Don Vito', minOrder: 10, deliveryPrice: 0, categories, menu, logoUrl: 'https://ir0.mobify.com/jpg/195/195/http://europe-public.foodpanda.com/assets/production/bg/images/vendors/v9mo.jpg?v=20171101121807' },
                     { name: 'Friends', minOrder: 0, deliveryPrice: 5, categories, menu },
                     { name: 'Delicious', minOrder: 15, deliveryPrice: 2, categories, menu }
                 ];
