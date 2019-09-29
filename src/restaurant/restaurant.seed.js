@@ -69,11 +69,11 @@ export const seedRestaurants = () => {
                 ];
             
                 const restaurants = [
-                    { name: 'Happy', type: 'unknown', minOrder: 10, deliveryPrice: 0, categories, menu },
-                    { name: 'Mr. Pizza', type: 'unknown', minOrder: 10, deliveryPrice: 10, categories, menu },
-                    { name: 'Test', type: 'unknown', minOrder: 10, deliveryPrice: 0, categories, menu },
-                    { name: 'Friends', type: 'unknown', minOrder: 0, deliveryPrice: 5, categories, menu },
-                    { name: 'Delicious', type: 'unknown', minOrder: 15, deliveryPrice: 2, categories, menu }
+                    { name: 'Happy', minOrder: 10, deliveryPrice: 0, categories, menu, logoUrl: 'https://webandevents.com/wp-content/uploads/2018/02/20180108-bf2cd9077f486d3dd7ea052b-or.png' },
+                    { name: 'Mr. Pizza', minOrder: 10, deliveryPrice: 10, categories, menu },
+                    { name: 'Test', minOrder: 10, deliveryPrice: 0, categories, menu },
+                    { name: 'Friends', minOrder: 0, deliveryPrice: 5, categories, menu },
+                    { name: 'Delicious', minOrder: 15, deliveryPrice: 2, categories, menu }
                 ];
             
                 return Restaurant.create(restaurants);

@@ -8,7 +8,7 @@ export default {
     },
     filter() {
         return Restaurant
-            .find({}, 'name logo type');
+            .find({}, 'name logoUrl');
     },
     getDetails(restauratName) {
         return Restaurant.findOne({ name: restauratName });

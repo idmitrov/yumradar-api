@@ -23,19 +23,19 @@ const restaurantSchema = new dbSchema({
         unique: true
     },
     /**
-     * @name name
-     * @type {String}
+     * @name kitchens
+     * @type {Array}
      */
-    type: {
-        type: String,
-        required: true
+    kitchens: {
+        type: Array,
+        default: []
     },
     /**
      * @name logo
      * @type {Buffer}
      */
-    logo: {
-        type: Buffer,
+    logoUrl: {
+        type: String,
         default: null
     },
     /**
